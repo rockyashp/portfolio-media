@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-leica-red: #e30613;
+  --color-leica-darkred: #9e040d;
+}
+
+body {
+  background-color: #080808;
+  color: #e5e5e5;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Hide canvas outline highlights on focus */
+canvas:focus {
+  outline: none;
+}
+
+/* Custom webkit scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e30613;
+}
+
+/* Film grain subtle keyframe background if needed */
+@keyframes noise-anim {
+  0% { transform: translate(0,0) }
+  10% { transform: translate(-5%,-5%) }
+  20% { transform: translate(-10%,5%) }
+  30% { transform: translate(5%,-10%) }
+  40% { transform: translate(-5%,15%) }
+  50% { transform: translate(-10%,5%) }
+  60% { transform: translate(15%,-5%) }
+  70% { transform: translate(0,10%) }
+  80% { transform: translate(-15%,15%) }
+  90% { transform: translate(10%,5%) }
+  100% { transform: translate(5%,0) }
+}

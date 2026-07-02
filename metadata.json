@@ -1,0 +1,8 @@
+{
+  "name": "Yash Photography Portfolio",
+  "description": "A professional, responsive, and interactive 3D photography portfolio themed around a Leica Minimalist Darkroom aesthetic, featuring an optical calibration HUD, selected works grid, and EXIF metadata lightbox.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
