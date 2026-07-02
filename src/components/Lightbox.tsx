@@ -155,7 +155,7 @@ export default function Lightbox({ photo, onClose, onSelectPhoto }: LightboxProp
                 YASH FINE-ART ARCHIVE
               </span>
               <span className="text-leica-red font-bold uppercase tracking-widest">
-                PRINTS ON DEMAND
+                
               </span>
             </div>
 

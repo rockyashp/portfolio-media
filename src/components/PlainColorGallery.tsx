@@ -140,10 +140,7 @@ function VideoCard({ video }: { video: VideoItem }) {
             {/* Dark gradient scrim at the bottom */}
             <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-950/10 to-transparent pointer-events-none" />
 
-            {/* Micro Indicator Tag */}
-            <div className="absolute top-3.5 right-3.5 bg-neutral-950/95 border border-neutral-800 px-2.5 py-1 rounded-full text-neutral-400 text-[8px] uppercase tracking-wider font-bold">
-              Leica SL-Cine 16:9
-            </div>
+            
           </motion.div>
         )}
       </AnimatePresence>
