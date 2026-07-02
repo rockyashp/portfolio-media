@@ -1,9 +1,7 @@
 import { PhotoItem } from './types';
 
-// Eagerly import gallery images so Vite resolves URLs at build time.
-const modules = import.meta.globEager('./assets/images/Gallery/*.{jpg,jpeg,png,webp,svg}');
-
-// Maintain explicit desired order (matches previous array order)
+// Production-ready static paths pointing to `public/images/Gallery`.
+// Ensure you copy `src/assets/images/Gallery/*` -> `public/images/Gallery/` before deploying.
 const fileOrder = [
   '1772388273855.jpg',
   '20250516_134804656_iOS.jpg',
@@ -52,8 +50,6 @@ const fileOrder = [
 ];
 
 export const portfolioPhotos: PhotoItem[] = fileOrder.map((fileName, idx) => {
-  const key = `./assets/images/Gallery/${fileName}`;
-  const mod: any = modules[key];
-  const url = mod?.default ?? `/assets/images/Gallery/${fileName}`;
+  const url = `/images/Gallery/${fileName}`;
   return { id: `g${idx + 1}`, imageUrl: url };
 });
