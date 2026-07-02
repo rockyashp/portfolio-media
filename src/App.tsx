@@ -8,6 +8,7 @@ import Lightbox from './components/Lightbox';
 import InquiryCard from './components/InquiryCard';
 import FilmGrain from './components/FilmGrain';
 import { Camera, Mail, BookOpen, UserCheck, Instagram } from 'lucide-react';
+import portraitUrl from './assets/images/yash_portrait_1783008963693.jpg';
 import { AnimatePresence } from 'motion/react';
 
 export default function App() {
@@ -99,7 +100,7 @@ export default function App() {
               <div className="md:col-span-5 flex justify-center">
                 <div className="relative w-full max-w-[280px] aspect-[3/4] rounded-xl overflow-hidden border border-neutral-800 bg-[#0c0c0f] shadow-2xl group">
                   <img 
-                    src="/src/assets/images/yash_portrait_1783008963693.jpg" 
+                    src={portraitUrl} 
                     alt="Yash Patil Portrait" 
                     className="w-full h-full object-cover grayscale contrast-115 transition-transform duration-500 group-hover:scale-103"
                     referrerPolicy="no-referrer"

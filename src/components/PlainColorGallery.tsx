@@ -15,28 +15,31 @@ interface VideoItem {
   coverUrl: string;
 }
 
-// Highly atmospheric, cinematic, looping video reels without text labels
+// Resolve video and thumbnail assets via Vite so URLs work in production builds.
+const videoModules = import.meta.globEager('../assets/Videos/*.{mp4,webm}');
+const thumbModules = import.meta.globEager('../assets/Videos/thumbnail/*.{png,jpg,jpeg,webp}');
+
 const portfolioVideos: VideoItem[] = [
   {
-    id: "vid-1",
-    videoUrl: "/src/assets/Videos/Vid1.mp4",
-    coverUrl: "/src/assets/Videos/thumbnail/Vid1.png",
+    id: 'vid-1',
+    videoUrl: (videoModules['../assets/Videos/Vid1.mp4'] as any)?.default ?? '/assets/Videos/Vid1.mp4',
+    coverUrl: (thumbModules['../assets/Videos/thumbnail/Vid1.png'] as any)?.default ?? '/assets/Videos/thumbnail/Vid1.png',
   },
   {
-    id: "vid-2",
-    videoUrl: "/src/assets/Videos/Vid2.mp4",
-    coverUrl: "/src/assets/Videos/thumbnail/Vid2.png",
+    id: 'vid-2',
+    videoUrl: (videoModules['../assets/Videos/Vid2.mp4'] as any)?.default ?? '/assets/Videos/Vid2.mp4',
+    coverUrl: (thumbModules['../assets/Videos/thumbnail/Vid2.png'] as any)?.default ?? '/assets/Videos/thumbnail/Vid2.png',
   },
   {
-    id: "vid-3",
-    videoUrl: "/src/assets/Videos/Vid3.mp4",
-    coverUrl: "/src/assets/Videos/thumbnail/Vid3.png",
+    id: 'vid-3',
+    videoUrl: (videoModules['../assets/Videos/Vid3.mp4'] as any)?.default ?? '/assets/Videos/Vid3.mp4',
+    coverUrl: (thumbModules['../assets/Videos/thumbnail/Vid3.png'] as any)?.default ?? '/assets/Videos/thumbnail/Vid3.png',
   },
   {
-    id: "vid-4",
-    videoUrl: "https://drive.google.com/file/d/1FkipFZNhgNZSiGLIeoFWzQyQhYer0W_J/view",
-    coverUrl: "/src/assets/Videos/thumbnail/Vid4.png",
-  }
+    id: 'vid-4',
+    videoUrl: 'https://drive.google.com/file/d/1FkipFZNhgNZSiGLIeoFWzQyQhYer0W_J/view',
+    coverUrl: (thumbModules['../assets/Videos/thumbnail/Vid4.png'] as any)?.default ?? '/assets/Videos/thumbnail/Vid4.png',
+  },
 ];
 
 function VideoCard({ video }: { video: VideoItem }) {

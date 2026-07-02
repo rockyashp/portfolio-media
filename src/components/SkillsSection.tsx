@@ -1,4 +1,7 @@
 import React from 'react';
+import lightroomLogo from '../assets/logo/adobe-lightroom-seeklogo.svg';
+import premiereLogo from '../assets/logo/adobe-premiere-seeklogo.svg';
+import davinciLogo from '../assets/logo/davinci-resolve-seeklogo.png';
 
 interface SkillItem {
   name: string;
@@ -8,23 +11,23 @@ interface SkillItem {
 }
 
 export default function SkillsSection() {
-  const photoSkills: SkillItem[] = [
+    const photoSkills: SkillItem[] = [
     {
       name: "Adobe Lightroom",
       category: "RAW Development & Precision Color Grading",
-      logoUrl: "/src/assets/logo/adobe-lightroom-seeklogo.svg",
+        logoUrl: lightroomLogo,
       borderColor: "border-sky-900/30 hover:border-sky-500/50"
     },
     {
       name: "Premiere Pro",
       category: "High-End Video Editing & Storytelling",
-      logoUrl: "/src/assets/logo/adobe-premiere-seeklogo.svg",
+        logoUrl: premiereLogo,
       borderColor: "border-purple-900/30 hover:border-purple-500/50"
     },
     {
       name: "DaVinci Resolve",
       category: "Cinematic Color Science & Color Correction",
-      logoUrl: "/src/assets/logo/davinci-resolve-seeklogo.png",
+        logoUrl: davinciLogo,
       borderColor: "border-amber-900/30 hover:border-amber-500/50"
     }
   ];
