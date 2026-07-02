@@ -4,7 +4,7 @@ A sleek, high‑performance web showcase for **Yash Patil**, a contemporary phot
 Built with **Vite + React**, styled with vanilla CSS, and featuring:
 
 - **Responsive gallery** with smooth transitions and arrow navigation.  
-- **Dynamic inquiry form** (no lab/chemical jargon) with date validation and error handling.  
+- **Dynamic inquiry form** with date validation and error handling.  
 - Optimised image assets (SVG logo cropping, compressed media).  
 - Dark‑mode aesthetic, subtle animations, and glass‑morphism touches.  
 
