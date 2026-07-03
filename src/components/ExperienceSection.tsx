@@ -13,7 +13,7 @@ interface TimelineItem {
 export default function ExperienceSection() {
   const experiences: TimelineItem[] = [
     {
-      year: "2025 — PRESENT",
+      year: "2026 — PRESENT",
       role: "Media Agency Professional",
       organization: "Crewfluence",
       location: "Mumbai, India",
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
       type: 'agency'
     },
     {
-      year: "2024 — PRESENT",
+      year: "July 2025 — August 2025",
       role: "Dell Student Content Ambassador",
       organization: "Dell Technologies",
       location: "Mumbai, India",
@@ -29,7 +29,7 @@ export default function ExperienceSection() {
       type: 'ambassador'
     },
     {
-      year: "2024 — PRESENT",
+      year: "2025 — 2026",
       role: "GDG Media Core",
       organization: "Vidyalankar Institute of Technology",
       location: "Mumbai, India",
@@ -37,7 +37,7 @@ export default function ExperienceSection() {
       type: 'campus'
     },
     {
-      year: "2024 — PRESENT",
+      year: "2025 — 2026",
       role: "ITSA Media Core",
       organization: "Vidyalankar Institute of Technology",
       location: "Mumbai, India",
@@ -45,7 +45,7 @@ export default function ExperienceSection() {
       type: 'campus'
     },
     {
-      year: "2024 — PRESENT",
+      year: "2025 — PRESENT",
       role: "VCC Media Core",
       organization: "Vidyalankar Institute of Technology",
       location: "Mumbai, India",
